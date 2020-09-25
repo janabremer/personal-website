@@ -1,3 +1,5 @@
+/* General */
+
 * {
     box-sizing: border-box;
 }
@@ -10,15 +12,14 @@ body {
     padding: 20px;
 }
 
-
-
 a {
     text-decoration: underline dotted;
     color: #035d6d;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 h1, h2 {
@@ -26,6 +27,8 @@ h1, h2 {
     color: #035d6d;
     
 }
+
+/* Main Grid Properties */
 
 .main {
     display: grid;
@@ -42,6 +45,26 @@ h1, h2 {
 .nav-bar a {
     padding: 5px;
 }
+
+
+
+
+/*Skills*/
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills li {
+    display: inline-block;
+    padding: 5px;
+    margin: 3px;
+    background-color: #0a7e9283;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
 
 /*Social Profiles*/
 .contact-card {
@@ -60,24 +83,28 @@ h1, h2 {
     color: #000;
 }
 
+.social-profile {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.img-icon {
+    height: 115px;
+    width: auto;
+}
+
 .contact-link {
     color: #000;
 }
 
+/* Biography CV */
 
-
-/*Skills*/
-.skills ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.cv {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 2fr;
 }
-
-.skills li {
-    display: inline-block;
-    padding: 5px;
-    margin: 3px;
-    background-color: #0a7e9283;
-    color: #ffffff;
-    border-radius: 4px;
+.cv-headline {
+    grid-column: span 2;
 }
