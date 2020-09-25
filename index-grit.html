@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jana's Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1 class="main-title">Jana Bremer</h1>
-        <nav>
+        <nav class="nav-bar">
             <a href="#contact">Contact</a>
             <a href="#biography">Biography</a>
         </nav>
@@ -17,29 +18,71 @@
     <main class="main">
 
         <!--Intro-->
-        <section id="intro" class="section intro">
+        <section id="intro" class="grid-section intro">
             <img src="images/profile-image.jpg" alt="">
-            <p>Hi, I'm Jana and I'm currently learning Web Development at <a href="https://www.neuefische.de/" target="_blank">neue fische</a>.</p>
+            <h4>Web Developer & E-Learning Author</h4>
+            <p>Hi, I'm Jana and I'm currently learning web development at <a href="https://www.neuefische.de/" target="_blank">neue fische</a>.</p>
         </section>
 
         <!--Skills-->
-        <section id="skills" class="section skills">
-            <h2 class="h2">Web Development Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>GitHub</li>
-                <li>Unix Commands</li>
-            </ul>
-            <h2 class="h2">Other Skills</h2>
-            <ul>
-                <li>LMS Moodle</li>
-                <li>Actionbound</li>
-                <li>MS Word</li>
-                <li>MS Powerpoint</li>
-                <li>MS Excel</li>
-            </ul>
+        <section id="skills" class="grid-section skills">
+            <h2>Skills</h2>
+            <section id="web-dev-skills" class="web-dev-skills">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>GitHub</li>
+                    <li>Unix Commands</li>
+                </ul>
+            </section>
+            <section id="other-skills" class="other-skills">
+                <h3>Others</h3>
+                <ul>
+                    <li>Moodle</li>
+                    <li>Actionbound</li>
+                    <li>Word</li>
+                    <li>Powerpoint</li>
+                    <li>Excel</li>
+                </ul>
+            </section>
         </section>
+
+        <!--Contact-->
+        <section id="contact" class="grid-section contact-card contact-details">
+            <h2 class="h2">Contact</h2>
+            <p>Phone number: <a class="contact-link" href="tel:+4916094683784">+49 160 946 837 84</a></p>
+            <p>Mail: <a class="contact-link" href="mailto:jana.bremer@posteo.de">jana.bremer@posteo.de</a></p>
+        </section>      
+        <section id="github" class="grid-section contact-card social-profile">
+            <a href="https://github.com/janabremer" target="_blank">
+                <img src="images/github-logo.png" alt="">                
+            </a>
+        </section>
+        <section id="codepen" class="grid-section contact-card social-profile">
+            <a href="https://codepen.io/janabremer" target="_blank">
+                <img src="images/codepen-logo.png" alt="">
+            </a>
+        </section>
+        <section id="linkedin" class="grid-section contact-card social-profile">
+            <!--Note: LinkedIn Link aktualisieren-->
+            <a href="https://de.linkedin.com/" target="_blank">
+                <img src="images/linkedin-logo.png" alt="">
+            </a>
+        </section>
+        
+
+        <!--Biography-->
+        <section id="biography" class="grid-section biography">
+            <h2>Biography</h2>
+            <!--Note: Text ersetzen-->
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim blanditiis, porro molestiae adipisci consequatur quis sapiente quasi ratione deserunt omnis officia magnam temporibus suscipit quidem sint distinctio iste ipsam amet!</p>
+        </section>
+
+
+
+
+
     </main>
 
 
