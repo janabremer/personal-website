@@ -18,16 +18,13 @@ body {
   background-color: #f0eeeb;
   color: #2c2c2c;
   font-family: Lato, sans-serif;
-  margin: 0;
+  margin: 20px;
   padding: 0px;
   font-size: 112.5%;
+  font-weight: 300;
 }
 
 /* ==================== General Elements ==================== */
-
-main {
-  padding: 20px;
-}
 
 a {
   text-decoration: underline dotted;
@@ -46,6 +43,10 @@ h2 {
   color: #035d6d;
 }
 
+h1 {
+  font-weight: 300;
+}
+
 h3 {
   font-size: 100%;
 }
@@ -58,37 +59,32 @@ h3 {
 
 /* ==================== Utility Classes ==================== */
 
-/* .text-color {
+/* .text-color2 {
   color: #035d6d;
 } */
 
 /* ==================== Component Classes ==================== */
 
-/* ---- Main Header ---- */
+/* ---- Main Header with Nav Bar---- */
 
 .main-header {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .main-title {
-  padding: 20px 20px 5px 20px;
+  margin: 0px 10px 0px 0px;
 }
 
-/* .main-title {
-  grid-column: 1 / span2;
-  justify-self: start;
-} */
-
-/* ---- Nav Bar ---- */
 .nav-bar {
-  padding: 5px 15px 10px 15px;
+  padding: 20px 0px 20px 0px;
 }
 
 .nav-bar a {
   padding: 5px;
-  margin: 5px;
+  margin: 0 5px 0 0;
   text-decoration: none;
   border: 1px solid #035d6d;
   border-radius: 2px;
@@ -98,11 +94,27 @@ h3 {
   background-color: #0a7e9283;
 }
 
+/* Media Query for min 500px */
+@media (min-width: 468px) {
+  .main-header {
+    justify-content: space-between;
+  }
+  .nav-bar a {
+    margin: 0 0 0 5px;
+  }
+}
+
 /* ---- Main Grid ---- */
 .main {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr;
+}
+
+@media {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* ---- Skills ---- */
@@ -128,6 +140,7 @@ h3 {
 /* ---- Contact ---- */
 .contact-card {
   height: 150px;
+  max-width: 400px;
   border-radius: 5px;
   background-color: #0a7e9283;
   width: 100%;
@@ -160,14 +173,14 @@ h3 {
   grid-gap: 5px;
 }
 .cv-headline {
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 .cv-date {
   color: #035d6da9;
   font-style: italic;
   font-size: 80%;
   margin-bottom: 0;
-  margin-top: 15px;
+  margin-top: 0;
 }
 
 .cv-station {
@@ -179,6 +192,21 @@ h3 {
   font-size: 80%;
   color: rgba(0, 0, 0, 0.644);
   margin: 0;
+}
+
+/* Media Query for min 500px */
+
+@media (min-width: 630px) {
+  .cv {
+    grid-template-columns: 1fr 2fr;
+    align-items: end;
+  }
+  .cv-headline {
+    grid-column: 1/-1;
+  }
+  .cv-description {
+    grid-column: 2/3;
+  }
 }
 
 /* Code Snippet for bigger screens? */
