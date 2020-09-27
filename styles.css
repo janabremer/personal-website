@@ -1,3 +1,13 @@
+/* ==================== Colors ==================== */
+/* 
+text-color 1: #2c2c2c
+text-color 2: #035d6d
+text-color 3: #ffffff
+
+background-color 1: #f0eeeb
+background-color 2: #0a7e9283
+*/
+
 /* ==================== General ==================== */
 
 * {
@@ -6,14 +16,18 @@
 
 body {
   background-color: #f0eeeb;
-  color: rgb(44, 44, 44);
-  font-family: 'Roboto', sans-serif;
+  color: #2c2c2c;
+  font-family: Lato, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0px;
   font-size: 112.5%;
 }
 
 /* ==================== General Elements ==================== */
+
+main {
+  padding: 20px;
+}
 
 a {
   text-decoration: underline dotted;
@@ -50,29 +64,45 @@ h3 {
 
 /* ==================== Component Classes ==================== */
 
-/* ---- Main Grid ---- */
-
-.main {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr;
-}
-
 /* ---- Main Header ---- */
 
-/* .main-header {
-  display: flex;
-  justify-content: space-between;
+.main-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+.main-title {
+  padding: 20px 20px 5px 20px;
+}
+
+/* .main-title {
+  grid-column: 1 / span2;
+  justify-self: start;
 } */
 
 /* ---- Nav Bar ---- */
 .nav-bar {
-  display: flex;
-  padding: 0 0 5px 0;
+  padding: 5px 15px 10px 15px;
 }
 
 .nav-bar a {
   padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  border: 1px solid #035d6d;
+  border-radius: 2px;
+}
+
+.nav-bar a:hover {
+  background-color: #0a7e9283;
+}
+
+/* ---- Main Grid ---- */
+.main {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
 }
 
 /* ---- Skills ---- */
@@ -97,24 +127,21 @@ h3 {
 
 /* ---- Contact ---- */
 .contact-card {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   height: 150px;
   border-radius: 5px;
   background-color: #0a7e9283;
-  align-self: center;
-  justify-self: center;
   width: 100%;
-  text-align: center;
-
-  margin: auto;
+  color: rgb(44, 44, 44);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .contact-details {
-  flex-direction: column;
-  padding: 20px;
-} */
+.contact-card p {
+  margin: 8px 0 0 0;
+}
 
 .contact-details h2 {
   color: rgb(44, 44, 44);
@@ -123,10 +150,6 @@ h3 {
 .img-icon {
   height: 110px;
   width: auto;
-}
-
-.contact-link {
-  color: rgb(44, 44, 44) 00;
 }
 
 /* ---- Biography and CV ---- */
