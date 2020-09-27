@@ -6,7 +6,7 @@
 
 body {
   background-color: #f0eeeb;
-  color: black;
+  color: rgb(44, 44, 44);
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 20px;
@@ -28,10 +28,25 @@ img {
 h1,
 h2 {
   text-transform: uppercase;
+  font-weight: 500;
   color: #035d6d;
 }
 
+h3 {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 /* ==================== Utility Classes ==================== */
+
+/* .text-color {
+  color: #035d6d;
+} */
 
 /* ==================== Component Classes ==================== */
 
@@ -42,6 +57,13 @@ h2 {
   grid-gap: 20px;
   grid-template-columns: 1fr;
 }
+
+/* ---- Main Header ---- */
+
+/* .main-header {
+  display: flex;
+  justify-content: space-between;
+} */
 
 /* ---- Nav Bar ---- */
 .nav-bar {
@@ -54,13 +76,13 @@ h2 {
 }
 
 /* ---- Skills ---- */
-.skills ul {
+.skills-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.skills li {
+.skills-ul li {
   display: inline-block;
   padding: 5px;
   margin: 3px;
@@ -69,41 +91,75 @@ h2 {
   border-radius: 4px;
 }
 
-/* ---- Social Profiles ---- */
+.skills h2 {
+  margin-bottom: 18px;
+}
+
+/* ---- Contact ---- */
 .contact-card {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   height: 150px;
   border-radius: 5px;
-  display: block;
   background-color: #0a7e9283;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  text-align: center;
+
+  margin: auto;
 }
 
-.contact-details {
-  text-align: center;
-  vertical-align: middle;
-}
+/* .contact-details {
+  flex-direction: column;
+  padding: 20px;
+} */
 
 .contact-details h2 {
-  color: #000;
-}
-
-.social-profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: rgb(44, 44, 44);
 }
 
 .img-icon {
-  height: 115px;
+  height: 110px;
   width: auto;
 }
 
 .contact-link {
-  color: #000;
+  color: rgb(44, 44, 44) 00;
 }
 
 /* ---- Biography and CV ---- */
 
 .cv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+.cv-headline {
+  margin: 0;
+}
+.cv-date {
+  color: #035d6da9;
+  font-style: italic;
+  font-size: 80%;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.cv-station {
+  color: #035d6d;
+  margin: 0;
+}
+
+.cv-description {
+  font-size: 80%;
+  color: rgba(0, 0, 0, 0.644);
+  margin: 0;
+}
+
+/* Code Snippet for bigger screens? */
+/* .cv {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr 2fr;
@@ -114,4 +170,4 @@ h2 {
 
 .cv-description {
   grid-column: 2/3;
-}
+} */
