@@ -194,6 +194,15 @@ h3 {
   margin: 0;
 }
 
+.about-me ul {
+  list-style-type: square;
+  padding: 0 0 0 20px;
+}
+
+.about-me li {
+  margin-bottom: 10px;
+}
+
 /* ---- Footer ---- */
 
 .footer {
