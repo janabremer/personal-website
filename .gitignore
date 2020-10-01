@@ -3,4 +3,5 @@ test.html
 
 .DS_Store
 node_modules
-.cashedist
+.cashe
+dist
