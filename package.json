@@ -4,6 +4,8 @@
   "description": "my personal website",
   "main": "index.html",
   "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/janabremer/personal-website/issues"
   },
-  "homepage": "https://github.com/janabremer/personal-website#readme"
+  "homepage": "https://github.com/janabremer/personal-website#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
 }
